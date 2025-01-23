@@ -1,9 +1,10 @@
-@import "reset";
+@use "reset";
 
 $font-stack: Helvetica, Arial;
 $background-color: #bfefed;
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   $font-stack: $font-stack, sans-serif;
