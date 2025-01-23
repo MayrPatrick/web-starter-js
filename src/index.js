@@ -1,20 +1,16 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom/client";
 
+import User from "./User";
+
 import "./styles/index.scss";
 
-export default class App extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <div className="center">
-        <img width={"400px"} src="images/hello_world.png" />
-      </div>
-    );
-  }
+export default function App() {
+  return (
+    <div className="center">
+      <User></User>
+    </div>
+  );
 }
 
 const container = document.getElementById("root");
