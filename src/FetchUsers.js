@@ -1,6 +1,6 @@
-import { fetchData } from './FetchData'
+import fetchData from './FetchData'
 
 const url = 'https://randomuser.me/api/'
-export default async function fetchUsers() {
+export default async function () {
   return (await fetchData(url)).results
 }

@@ -1,4 +1,4 @@
-export async function fetchData(url) {
+export default async function (url) {
   const response = await fetch(url, {
     method: 'GET',
     headers: {
