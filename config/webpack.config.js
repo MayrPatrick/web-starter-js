@@ -10,46 +10,41 @@ const config = {
   output: {
     path: path.resolve(__dirname, '../build'),
     filename: 'bundle.js',
-    publicPath: '/'
+    publicPath: '/',
   },
   mode: 'development',
   resolve: {
-    modules: [path.resolve('node_modules'), 'node_modules']
+    modules: [path.resolve('node_modules'), 'node_modules'],
   },
   performance: {
-    hints: false
+    hints: false,
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(SRC_DIRECTORY, 'index.html')
+      template: path.join(SRC_DIRECTORY, 'index.html'),
     }),
-    new CopyWebpackPlugin(
-      {
-        patterns: [
-          { from: path.join(ROOT_DIRECTORY, 'assets'), to: path.join(ROOT_DIRECTORY, 'build') }
-        ]
-      }
-    )
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.join(ROOT_DIRECTORY, 'assets'),
+          to: path.join(ROOT_DIRECTORY, 'build'),
+        },
+      ],
+    }),
   ],
   module: {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
       {
         test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader'
-        ]
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(png|svg|jpg|gif|pdf)$/,
-        use: [
-          'file-loader'
-        ]
-      }
-    ]
-  }
+        use: ['file-loader'],
+      },
+    ],
+  },
 }
 
 module.exports = config

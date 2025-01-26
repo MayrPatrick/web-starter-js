@@ -1,13 +1,13 @@
 export async function fetchData(url) {
   const response = await fetch(url, {
-    method: "GET",
+    method: 'GET',
     headers: {
-      Accept: "application/json",
+      Accept: 'application/json',
     },
-  });
+  })
   if (!response.ok) {
-    throw new Error("Network response was not ok.");
+    throw new Error('Network response was not ok.')
   }
 
-  return response.json();
+  return response.json()
 }

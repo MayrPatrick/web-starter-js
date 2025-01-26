@@ -1,27 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react'
 
-import fetchUsers from "./FetchUsers";
+import fetchUsers from './FetchUsers'
 
 export default function User() {
-  const [data, setData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [data, setData] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
+  const [error, setError] = useState(null)
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const newData = await fetchUsers();
-        setData(newData);
-        setIsLoading(false);
-        setError(null);
+        const newData = await fetchUsers()
+        setData(newData)
+        setIsLoading(false)
+        setError(null)
       } catch (error) {
-        console.log(error);
-        setIsLoading(false);
-        setError(error);
+        console.log(error)
+        setIsLoading(false)
+        setError(error)
       }
     }
-    fetchData();
-  }, []);
+    fetchData()
+  }, [])
 
   return (
     <div>
@@ -45,5 +45,5 @@ export default function User() {
         </div>
       )}
     </div>
-  );
+  )
 }

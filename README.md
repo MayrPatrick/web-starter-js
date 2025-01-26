@@ -1,1 +1,1 @@
-# web-starter
+# web-starter-js
