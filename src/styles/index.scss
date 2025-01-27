@@ -1,7 +1,6 @@
-@use 'reset';
+@use 'User';
 
 $font-stack: Helvetica, Arial;
-$background-color: #bfefed;
 
 html,
 body {
@@ -11,8 +10,7 @@ body {
 }
 
 body {
-  font-style: $font-stack;
-  background: $background-color;
+  font-family: $font-stack;
   height: 100%;
 }
 
@@ -21,7 +19,6 @@ body {
 }
 
 .center {
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;

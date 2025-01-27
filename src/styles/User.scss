@@ -1,0 +1,19 @@
+.user_container {
+  flex-flow: row wrap;
+  display: flex;
+}
+
+.user {
+  border-radius: 15px;
+  padding: 1em;
+  margin: 1em;
+  border: 0.2em solid #606c38;
+  background-color: #e9edc9;
+  text-align: center;
+  box-shadow: 10px 5px 5px #e5e5e5;
+}
+
+.user .name {
+  font-size: 2em;
+  display: block;
+}

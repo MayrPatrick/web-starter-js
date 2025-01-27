@@ -24,26 +24,26 @@ export default function User() {
   }, [])
 
   return (
-    <div>
+    <>
       {isLoading ? (
-        <p>Loading...</p>
+        <h2>Loading...</h2>
       ) : error ? (
-        <p>an error happened {JSON.stringify(error)}</p>
+        <h2>an error happened {JSON.stringify(error)}</h2>
       ) : (
-        <div>
+        <div class="user_container">
           {data.map((user) => (
-            <div key={user.id.value}>
-              <h1>
+            <div class="user" key={user.id.value}>
+              <span class="name">
                 {user.name.first} {user.name.last}
-              </h1>
+              </span>
               <img
-                src={user.picture.medium}
+                src={user.picture.large}
                 alt="profile picture of {user.name.first} {user.name.last}"
               />
             </div>
           ))}
         </div>
       )}
-    </div>
+    </>
   )
 }

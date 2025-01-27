@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom/client'
 
-import User from './User'
+import User from './user/User'
 
 import './styles/index.scss'
 
