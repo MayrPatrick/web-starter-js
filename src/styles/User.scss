@@ -1,19 +1,37 @@
 .user_container {
-  flex-flow: row wrap;
+}
+
+.user_search {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1em;
+  margin-top: 1em;
+}
+
+.user_search input {
+  min-width: 20em;
+}
+
+.user_list {
 }
 
 .user {
+  display: flex;
+  align-items: center;
+
   border-radius: 15px;
-  padding: 1em;
+  padding: 0.5em;
   margin: 1em;
-  border: 0.2em solid #606c38;
-  background-color: #e9edc9;
+  border: 0.1em dotted #ced4da;
   text-align: center;
-  box-shadow: 10px 5px 5px #e5e5e5;
+}
+
+.user:hover {
+  box-shadow: 10px 10px 10px #e5e5e5;
 }
 
 .user .name {
-  font-size: 2em;
-  display: block;
+  font-size: 1.2em;
+  margin-left: 1em;
 }

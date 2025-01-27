@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom/client'
 
-import User from './user/User'
+import UserList from './user/UserList'
 
 import './styles/index.scss'
 
 export default function App() {
   return (
-    <div className="center">
-      <User></User>
+    <div>
+      <UserList />
     </div>
   )
 }

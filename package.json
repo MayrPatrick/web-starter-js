@@ -9,10 +9,10 @@
     "generate-sources": "webpack-cli --progress --mode production --config config/webpack.config.production.js",
     "generate-styles": "sass src/styles/index.scss build/index.css",
     "serve": "npx serve build/",
-    "lint": "npx eslint",
+    "lint": "npx eslint --fix",
     "format": "npx prettier \"**/*.{js,json,md,scss,yaml,yml}\" --write",
     "test": "jest --watchAll ./tests/",
-    "pre-commit": "npm run format && npm run lint && npm run test"
+    "prepare": "husky"
   },
   "dependencies": {
     "react": "^18.3.1",
