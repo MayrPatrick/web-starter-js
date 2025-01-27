@@ -1,19 +1,28 @@
 .user_container {
 }
 
-.user_search {
+.user_search_container {
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 1em;
   margin-top: 1em;
 }
 
-.user_search input {
+.user_search {
+  min-height: 2em;
   min-width: 20em;
 }
 
-.user_list {
+.user_search input {
+  width: 100%;
+  min-height: 2em;
+  padding-left: 1.6em; // 1em for the image (icon) + 0.3em per side of padding (left & right)
+}
+
+.user_search i {
+  position: absolute;
+  margin-left: 0.3em; // offset to the left of the input box
+  margin-top: 0.5em; // offset to the top of the input box
 }
 
 .user {

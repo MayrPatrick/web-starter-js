@@ -5,12 +5,15 @@ export default function ({ query, onChange }) {
     onChange(e.target.value)
   }
   return (
-    <div className="user_search">
-      <input
-        value={query}
-        placeholder="Enter your search query here..."
-        onChange={handleChange}
-      />
+    <div className="user_search_container">
+      <div className="user_search">
+        <i className="fa fa-search icon"></i>
+        <input
+          value={query}
+          placeholder="Enter your search query here..."
+          onChange={handleChange}
+        />
+      </div>
     </div>
   )
 }
