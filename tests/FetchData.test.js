@@ -1,4 +1,4 @@
-import fetchData from '../src/FetchData'
+import fetchData from '../src/core/FetchData'
 
 beforeEach(() => {
   fetch.resetMocks()

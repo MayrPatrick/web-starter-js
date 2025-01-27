@@ -1,4 +1,4 @@
-import fetchUsers from '../src/FetchUsers'
+import fetchUsers from '../src/user/FetchUsers'
 
 beforeEach(() => {
   fetch.resetMocks()
